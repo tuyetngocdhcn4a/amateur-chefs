@@ -4,12 +4,12 @@
 
          <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
          <div class="logo d-block d-lg-none">
-             <a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+             <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
          </div>
 
          <nav class="nav-menu d-none d-lg-block">
              <ul class="nav-inner">
-                 <li class="active"><a href="#">Trang chủ</a></li>
+                 <li class="active"><a href="index.php">Trang chủ</a></li>
                  <li class="drop-down"><a href="">Món ăn</a>
                      <ul>
                          <li><a href="#about">Món âu</a></li>
@@ -22,19 +22,17 @@
                              </ul>
                          </li>
                          <li><a href="#team">Ăn vặt</a></li>
-
-
                      </ul>
                  </li>
                  <li><a href="#services">Thức uống</a></li>
 
-                 <li class="nav-logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+                 <li class="nav-logo"><a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
                  </li>
 
                  <li><a href="#portfolio">Mẹo vặt</a></li>
                  <li><a href="">Liên hệ</a></li>
-                 <li><a href="">Đăng nhập</a></li>
 
+                 <li><a href="trang-dang-nhap.php">Đăng nhập</a></li>
              </ul>
          </nav><!-- .nav-menu -->
 

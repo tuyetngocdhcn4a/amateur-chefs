@@ -1,22 +1,16 @@
 <!-- HEADER -->
 <?php
-include 'src/custom-header.php';
+include './header.php';
 ?>
 
 
-<!-- BODY -->
 
-<body>
-    <?php
-   include 'src/menu-chinh/index.php';
-   ?>
-    <?php
-   include 'src/trang-chu/index.php';
-   ?>
-</body>
+<!-- Trang Chu -->
+<p>Trang chur</p>
+
 
 
 <!-- FOOTER -->
 <?php
-include 'src/custom-footer.php';
+include './footer.php';
 ?>
