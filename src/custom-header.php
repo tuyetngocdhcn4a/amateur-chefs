@@ -8,6 +8,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- SCRIPTS -->
     <script src="js/bootstrap.min.js"></script>

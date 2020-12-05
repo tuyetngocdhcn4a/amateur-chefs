@@ -7,9 +7,12 @@ include 'src/custom-header.php';
 <!-- BODY -->
 
 <body>
-    <p class="text-left">Left aligned text on all viewport sizes.</p>
-    <p class="text-center">Center aligned text on all viewport sizes.</p>
-    <p class="text-right">Right aligned text on all viewport sizes.</p>
+    <?php
+   include 'src/menu-chinh/index.php';
+   ?>
+    <?php
+   include 'src/trang-chu/index.php';
+   ?>
 </body>
 
 
