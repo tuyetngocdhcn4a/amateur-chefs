@@ -3,6 +3,9 @@
 include './header.php';
 ?>
 
+<?php
+include './menu-chinh.php';
+?>
 
 
 <!-- Trang Chu -->

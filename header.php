@@ -17,7 +17,3 @@
 </head>
 
 <body>
-
-    <?php
-    include './menu-chinh.php';
-    ?>
