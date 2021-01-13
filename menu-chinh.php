@@ -24,15 +24,24 @@
                          <li><a href="#team">Ăn vặt</a></li>
                      </ul>
                  </li>
-                 <li><a href="#services">Thức uống</a></li>
+                 <li><a href="thuc-uong.php">Thức uống</a></li>
 
                  <li class="nav-logo"><a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
                  </li>
 
                  <li><a href="#portfolio">Mẹo vặt</a></li>
                  <li><a href="">Liên hệ</a></li>
+                 <?php
+                    session_start();
+                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                        echo '<li><a href="trang-dang-nhap.php">QUẢN LÝ</a></li>';
+                        echo '<li><a href="controller/logout.php">ĐĂNG XUẤT</a></li>';
+                    } else {
+                        echo '<li><a href="trang-dang-nhap.php">Đăng nhập</a></li>';
+                    }
 
-                 <li><a href="trang-dang-nhap.php">Đăng nhập</a></li>
+                    ?>
+
              </ul>
          </nav><!-- .nav-menu -->
 

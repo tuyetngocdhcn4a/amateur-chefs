@@ -148,6 +148,15 @@
   # footer
   --------------------------------------------------------------*/
 
+footer {
+  padding: 10px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
+
 /*--------------------------------------------------------------
   # trang-dang-nhap
   ----------------  ----------------------------------------------*/
@@ -159,11 +168,6 @@
   background-position: center;
   background-size: cover;
 }
-
-#login {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 #login .container #login-row #login-column #login-box {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -174,18 +178,39 @@
   border-radius: 3% 3%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-#login .container #login-row #login-column #login-box #login-form {
-  padding: 30px;
+
+/*--------------------------------------------------------------
+  # trang-thuc-uong
+  ----------------  ----------------------------------------------*/
+.thuc-uong-page {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("img/thuc-uong-bn1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#login
-  .container
-  #login-row
-  #login-column
-  #login-box
-  #login-form
-  #register-link {
-  margin-top: -85px;
+#thuc-uong {
+  /* max-width: 1350px; */
+  width: 100%;
+  height: 450px;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  border: 3px solid #73ad21;
+  border: 1px solid #3b1616;
 }
-#submit-login {
-  margin-top: 20px;
+.list-thuc-uong {
+  text-align: center;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.cong-thuc-thuc-uong {
+  background-color: lawngreen;
+  width: 300px;
+}
+.img-list-thuc-uong {
+  width: 260px;
 }

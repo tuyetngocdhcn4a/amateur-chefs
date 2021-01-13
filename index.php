@@ -9,9 +9,11 @@ include './menu-chinh.php';
 
 
 <!-- Trang Chu -->
-<p>Trang chur</p>
 
-
+<style>
+<?php include 'css/style.css';
+?>
+</style>
 
 <!-- FOOTER -->
 <?php
