@@ -1,60 +1,84 @@
 <!-- HEADER -->
 <?php
 include './header.php';
-?>
-
-<?php
 include './menu-chinh.php';
-?>
-<style>
-<?php include 'css/style.css';
-?>
-</style>
+// add style
+echo '<style>';
+include 'css/style.css';
+echo '</style>';
 
-<!-- Trang Chu -->
-<p>Thuc uong</p>
-<section class="thuc-uong-page">
+
+
+?>
+
+
+<!-- BANNER -->
+<section class="thuc-uong-page mb-5">
     <div id="thuc-uong">
     </div>
 </section>
-<div class="row d-flex justify-content-between">
 
-    <div class="col-4 mt-5">
-        <form class="d-flex justify-content-between" method="post">
-            <input class="form-control" type="search" name="searchKey" placeholder="Tìm kiếm" aria-label="Search">
-            <button class="ml-3 btn btn-outline-dark text-uppercase" style="min-width: 100px" type="submit">
-                Tìm kiếm
-            </button>
-        </form>
-    </div>
-</div>
-<div class="row list-thuc-uong">
-    <div class="col-sm-3">
-        <div>
-            <label for="thuc-uong-detox" class="text-white cong-thuc-thuc-uong">Detox</label><br>
-            <img id="detox" src="img/detox1.jpg" alt="" class="img-list-thuc-uong">
+<!-- LIST MON -->
+
+<section class="container">
+    <div class="row">
+        <!-- CONTENT -->
+        <div class="content col-8">
+            <?php
+
+            include 'model/model.php';
+            $model = new Model();
+            $step = 1;
+
+            $table = $model->select_category_with_paging('NUOC001', $step);
+
+            if (array_key_exists('view-more', $_POST)) {
+                $table = $model->select_category_with_paging('NUOC001', $step + 1);
+            }
+
+            if (!empty($table)) {
+                foreach ($table as $row) {
+            ?>
+
+            <!-- ITEM -->
+            <a class="item py-2 row" href="index.php">
+                <img class="contain col-3" width="250px"
+                    <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
+                <div class="col-8">
+                    <span class="text-uppercase font-weight-bold row"><?php echo $row['tenmon']; ?></span>
+                    <span class="cong-thuc-short row"><?php echo $row['congthuc']; ?></span>
+                </div>
+            </a>
+
+            <?php
+                }
+            } else {
+                echo '<div class="flex justify-center text-center py-5">
+                <span class="ten-mon text-uppercase font-weight-bold">TẠM THỜI CHƯA CÓ BÀI VIẾT</span>
+        </div>';
+            }
+            ?>
+
+
+            <div class="flex justify-center text-center pb-5">
+
+                <form method="post">
+                    <input type="submit" name="view-more" class="btn btn-primary" value="Xem thêm" />
+                </form>
+            </div>
+
+        </div>
+
+        <!-- SIDE BAR -->
+        <div class="col-4 pl-3">
+            <div class="side-bar pl-3">
+                <p>Bài viết mới nhất</p>
+                <p>Bài viết đã xem</p>
+            </div>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div>
-            <label for="thuc-uong-detox" class="text-white cong-thuc-thuc-uong">Sinh tố</label><br>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div>
-            <label for="thuc-uong-detox" class="text-white cong-thuc-thuc-uong">Cà phê</label><br>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div>
-            <label for="thuc-uong-detox" class="text-white cong-thuc-thuc-uong ">Cocktail</label><br>
-        </div>
-    </div>
 
-</div>
-
-
-
+</section>>
 <!-- FOOTER -->
 <?php
 include './footer.php';

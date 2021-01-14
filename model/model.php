@@ -36,6 +36,21 @@ class Model
     }
 
 
+    #Chon Loai theo trang
+    public function select_category_with_paging($category, $step)
+    {
+        $table = null;
+        $paging = $step * 5;
+        $query = "SELECT * FROM congthuc where maloaimon = '$category' LIMIT $paging";
+        if ($sql = $this->conn->query($query)) {
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $table[] = $row;
+            }
+        }
+        return $table;
+    }
+
+
 
     #__destruct dừng kết nối csdl
     function __destruct()
