@@ -1,0 +1,226 @@
+/*--------------------------------------------------------------
+  # header
+  --------------------------------------------------------------*/
+#header {
+  height: 100px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0 4px 10px -3px rgba(191, 191, 191, 0.5);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+  # menu-chinh
+  --------------------------------------------------------------*/
+.nav-menu {
+  width: 100%;
+}
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.nav-menu .nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu .nav-logo {
+  padding: 0 20px;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #151515;
+  padding: 15px 25px;
+  transition: 0.3s;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: #7cc576;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #151515;
+}
+
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
+  color: #7cc576;
+}
+
+.nav-menu .drop-down > a:after {
+  padding-left: 5px;
+  content: url("https://api.iconify.design/fa-angle-down.svg?height=14&inline=true");
+  vertical-align: -0.143em;
+}
+
+.nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down > a:after {
+  content: url("https://api.iconify.design/vaadin-angle-right.svg?height=16");
+  vertical-align: -0.125em;
+  position: absolute;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+  # footer
+  --------------------------------------------------------------*/
+
+footer {
+  padding: 10px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+/*--------------------------------------------------------------
+  # trang-dang-nhap
+  ----------------  ----------------------------------------------*/
+.login-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 600px;
+  height: 420px;
+  width: 450px;
+  border: 1px solid #9c9c9c;
+  border-radius: 3% 3%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*--------------------------------------------------------------
+  # trang-thuc-uong
+  ----------------  ----------------------------------------------*/
+.thuc-uong-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/thuc-uong-bn1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#thuc-uong {
+  border: none;
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* SIDE BAR */
+.side-bar {
+  background: #9c9c9c;
+}
+
+/*--------------------------------------------------------------
+  # DUNG CHUNG
+  ----------------  ----------------------------------------------*/
+
+.cong-thuc-short {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+a.item {
+  text-decoration: none !important;
+  color: #1c1c1c;
+}
+
+a.item:hover {
+  color: #7cc576;
+  text-decoration: none !important;
+}
