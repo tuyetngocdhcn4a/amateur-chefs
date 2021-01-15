@@ -49,6 +49,18 @@ class Model
         }
         return $table;
     }
+    public function select_category_with_paging1($category, $step)
+    {
+        $table = null;
+        $paging = $step * 5;
+        $query = "SELECT * FROM congthuc where maloaimon = '$category' LIMIT 1";
+        if ($sql = $this->conn->query($query)) {
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $table[] = $row;
+            }
+        }
+        return $table;
+    }
 
 
 

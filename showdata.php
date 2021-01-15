@@ -13,13 +13,6 @@ echo '</style>';
 
 
 <!-- BANNER -->
-<section class="thuc-uong-page mb-5">
-    <div id="thuc-uong">
-    </div>
-</section>
-
-<!-- LIST MON -->
-
 <section class="container">
     <div class="row">
         <!-- CONTENT -->
@@ -30,10 +23,10 @@ echo '</style>';
             $model = new Model();
             $step = 1;
 
-            $table = $model->select_category_with_paging('NUOC001', $step);
+            $table = $model->select_category_with_paging1('NUOC001', $step);
 
             if (array_key_exists('view-more', $_POST)) {
-                $table = $model->select_category_with_paging('NUOC001', $step + 1);
+                $table = $model->select_category_with_paging1('NUOC001', $step + 1);
             }
 
             if (!empty($table)) {
@@ -41,7 +34,7 @@ echo '</style>';
             ?>
 
             <!-- ITEM -->
-            <a class="item py-2 row" href="showdata.php">
+            <a class="item py-2 row">
                 <img class="contain col-3" width="250px"
                     <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
                 <div class="col-8">
@@ -79,7 +72,3 @@ echo '</style>';
     </div>
 
 </section>>
-<!-- FOOTER -->
-<?php
-include './footer.php';
-?>
