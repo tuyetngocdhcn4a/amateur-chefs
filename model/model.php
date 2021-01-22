@@ -64,6 +64,7 @@ class Model
 
 
 
+
     #__destruct dừng kết nối csdl
     function __destruct()
     {

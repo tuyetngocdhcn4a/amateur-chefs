@@ -15,6 +15,7 @@ echo '</style>';
 <!-- BANNER -->
 <section class="thuc-uong-page mb-5">
     <div id="thuc-uong">
+        <h1 class="slogan-thuc-uong">Cho một cuộc sống tươi khỏe và lành mạnh</h1>
     </div>
 </section>
 

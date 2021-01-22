@@ -60,6 +60,9 @@
 .nav-menu .nav-logo {
   padding: 0 20px;
 }
+/* .img-logo {
+  size: 50, 50;
+} */
 
 .nav-menu a {
   display: block;
@@ -183,19 +186,30 @@ footer {
   # trang-thuc-uong
   ----------------  ----------------------------------------------*/
 .thuc-uong-page {
-  margin: 0;
+  margin: 20px;
   padding: 0;
+  background-color: transparent;
   background-image: url("img/thuc-uong-bn1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 20px;
   background-size: cover;
 }
 
 #thuc-uong {
+  height: 400px;
   border: none;
   -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.slogan-thuc-uong {
+  font-style: oblique, bold;
+  color: rgb(149, 107, 107);
+  font-family: Book Antiqua;
+  padding-top: 40px;
+  text-align: center;
 }
 
 /* SIDE BAR */
@@ -203,6 +217,63 @@ footer {
   background: #9c9c9c;
 }
 
+/*--------------------------------------------------------------
+  # MON AU
+  ----------------  ----------------------------------------------*/
+.mon-au-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-au4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#mon-au {
+  height: 400px;
+  border: none;
+
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+.slogan-mon-au {
+  font-style: oblique, bold;
+  color: rgb(149, 107, 107);
+  font-family: Book Antiqua;
+  padding-top: 40px;
+  text-align: center;
+}
+/*--------------------------------------------------------------
+  # MON AU
+  ----------------  ----------------------------------------------*/
+.meo-vat-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-tip.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#meo-vat {
+  height: 400px;
+  border: none;
+
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+.slogan-meo-vat {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-size: 4rem;
+  font-family: monospace;
+  align-content: center;
+}
 /*--------------------------------------------------------------
   # DUNG CHUNG
   ----------------  ----------------------------------------------*/
@@ -213,6 +284,16 @@ footer {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
+}
+.cong-thuc-long {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.noi-dung-cong-thuc {
+  background-color: #9c9c9c;
 }
 
 a.item {
