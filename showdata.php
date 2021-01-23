@@ -21,13 +21,9 @@ echo '</style>';
 
             include 'model/model.php';
             $model = new Model();
-            $step = 1;
+            $mamon = $_GET['mamon'];
+            $table = $model->show_detail($mamon);
 
-            $table = $model->select_category_with_paging1('NUOC001', $step);
-
-            if (array_key_exists('view-more', $_POST)) {
-                $table = $model->select_category_with_paging1('NUOC001', $step + 1);
-            }
 
             if (!empty($table)) {
                 foreach ($table as $row) {
@@ -53,7 +49,7 @@ echo '</style>';
                 }
             } else {
                 echo '<div class="flex justify-center text-center py-5">
-                <span class="ten-mon text-uppercase font-weight-bold">TẠM THỜI CHƯA CÓ BÀI VIẾT</span>
+                <span class="ten-mon text-uppercase font-weight-bold">KẾT NỐI LỖI VUI LÒNG THỬ LẠI</span>
         </div>';
             }
             ?>

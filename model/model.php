@@ -21,7 +21,6 @@ class Model
     #Kiem tra dang nhap
     public function kiem_tra_dang_nhap($tentk, $matkhau)
     {
-
         $data = null;
         $query = "SELECT * FROM taikhoan WHERE tentk = '$tentk' and matkhau = '$matkhau'";
         if ($sql = $this->conn->query($query)) {
@@ -49,11 +48,12 @@ class Model
         }
         return $table;
     }
-    public function select_category_with_paging1($category, $step)
+
+    public function select_category_with_paging_tv($category, $step)
     {
         $table = null;
-        $paging = $step * 5;
-        $query = "SELECT * FROM congthuc where maloaimon = '$category' LIMIT 1";
+        $paging = $step * 3;
+        $query = "SELECT * FROM congthuc where maloaimon = '$category' LIMIT $paging";
         if ($sql = $this->conn->query($query)) {
             while ($row = mysqli_fetch_assoc($sql)) {
                 $table[] = $row;
@@ -61,6 +61,34 @@ class Model
         }
         return $table;
     }
+
+    public function show_detail($mamon)
+    {
+        $table = null;
+        $query = "SELECT * FROM congthuc where mamon = '$mamon'";
+        if ($sql = $this->conn->query($query)) {
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $table[] = $row;
+            }
+        }
+        return $table;
+    }
+
+
+    // FUNCTION CHUAN
+    // public function function_chuan($bien1, $bien2, $bienn)
+    // {
+    //     $table = null;
+    //     $query = "Câu lệnh query";
+
+
+    //     if ($sql = $this->conn->query($query)) {
+    //         while ($row = mysqli_fetch_assoc($sql)) {
+    //             $table[] = $row;
+    //         }
+    //     }
+    //     return $table;
+    // }
 
 
 

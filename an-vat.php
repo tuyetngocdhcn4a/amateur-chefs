@@ -13,10 +13,11 @@ echo '</style>';
 
 
 <!-- BANNER -->
-<section class="mon-au-page mb-5">
-    <div id="mon-au">
-        <marquee class="slogan-meo-vat text-uppercase  ">
-            Talent creates luxury
+<section class="an-vat-page mb-5">
+    <div id="an-vat">
+        <marquee class="slogan-an-vat text-uppercase  ">
+
+            Enjoy it your way
         </marquee>
     </div>
 </section>

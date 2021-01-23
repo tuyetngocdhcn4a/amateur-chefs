@@ -13,11 +13,10 @@ echo '</style>';
 
 
 <!-- BANNER -->
-<section class="mon-a-page mb-5">
-    <div id="mon-a">
+<section class="mon-au-page mb-5">
+    <div id="mon-au">
         <marquee class="slogan-meo-vat text-uppercase  ">
-
-            Cook for yourself, for people and for life more fun!
+            Talent creates luxury
         </marquee>
     </div>
 </section>
@@ -34,10 +33,10 @@ echo '</style>';
             $model = new Model();
             $step = 1;
 
-            $table = $model->select_category_with_paging('MONA', $step);
+            $table = $model->select_category_with_paging('MONNAM', $step);
 
             if (array_key_exists('view-more', $_POST)) {
-                $table = $model->select_category_with_paging('MONA', $step + 1);
+                $table = $model->select_category_with_paging('MONNAM', $step + 1);
             }
 
             if (!empty($table)) {

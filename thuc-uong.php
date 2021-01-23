@@ -42,7 +42,7 @@ echo '</style>';
             ?>
 
             <!-- ITEM -->
-            <a class="item py-2 row" href="showdata.php">
+            <a class="item py-2 row" href=<?php echo 'showdata.php?mamon=' . $row['mamon'] . '' ?>>
                 <img class="contain col-3" width="250px"
                     <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
                 <div class="col-8">

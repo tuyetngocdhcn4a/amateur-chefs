@@ -14,7 +14,7 @@
                      <ul>
                          <li><a href="mon-au.php">Món âu</a></li>
                          <li><a href="mon-a.php">Món á</a></li>
-                         <li class="drop-down"><a href="thuan-viet.php"> Thuần việt</a>
+                         <li class="drop-down"><a href="thuanviet2.php"> Thuần việt</a>
                              <ul>
                                  <li><a href="mon-bac.php">Món Bắc</a></li>
                                  <li><a href="mon-trung.php">Món Trung</a></li>

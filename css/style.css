@@ -246,7 +246,65 @@ footer {
   text-align: center;
 }
 /*--------------------------------------------------------------
-  # MON AU
+  # MON A
+  ----------------  ----------------------------------------------*/
+.mon-a-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-a10.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#mon-a {
+  height: 400px;
+  border: none;
+
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+.slogan-mon-a {
+  font-style: oblique, bold;
+  color: rgb(149, 107, 107);
+  font-family: Book Antiqua;
+  padding-top: 40px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+  # an vat
+  ----------------  ----------------------------------------------*/
+.an-vat-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-an-vat2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#an-vat {
+  height: 400px;
+  border: none;
+
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+.slogan-an-vat {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-size: 4rem;
+  font-family: monospace;
+  align-content: center;
+}
+/*--------------------------------------------------------------
+  # Meo vat
   ----------------  ----------------------------------------------*/
 .meo-vat-page {
   margin: 20px;
@@ -274,6 +332,83 @@ footer {
   font-family: monospace;
   align-content: center;
 }
+
+/*--------------------------------------------------------------
+  # THUAN VIET
+  ----------------  ----------------------------------------------*/
+.tv-mon {
+  background-color: rgba(209, 196, 196, 0.74);
+  justify-content: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.set-col {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 5px;
+  justify-content: center;
+}
+.item2 {
+  margin: 10px;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-item {
+  margin: 5px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+a.tv-mon-it:link {
+  color: black;
+}
+a.tv-mon-it:visited {
+  color: black;
+}
+a.tv-mon-it:hover {
+  color: white;
+}
+
+.thuan-viet {
+  justify-content: center;
+  padding: 30px;
+}
+
+.mon-tv-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-a3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+#mon-tv {
+  height: 400px;
+  border: none;
+
+  -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
+}
+.slogan-mon-tv {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-size: 4rem;
+  font-family: monospace;
+  align-content: center;
+
 /*--------------------------------------------------------------
   # DUNG CHUNG
   ----------------  ----------------------------------------------*/
