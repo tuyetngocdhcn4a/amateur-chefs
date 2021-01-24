@@ -214,7 +214,7 @@ footer {
 
 /* SIDE BAR */
 .side-bar {
-  background: #9c9c9c;
+  background: rgba(209, 196, 196, 0.74);
 }
 
 /*--------------------------------------------------------------
@@ -368,13 +368,13 @@ img {
   font-family: sans-serif;
 }
 
-a.tv-mon-it:link {
+.tv-mon-it:link {
   color: black;
 }
-a.tv-mon-it:visited {
+.tv-mon-it:visited {
   color: black;
 }
-a.tv-mon-it:hover {
+.tv-mon-it:hover {
   color: white;
 }
 
@@ -408,7 +408,7 @@ a.tv-mon-it:hover {
   font-size: 4rem;
   font-family: monospace;
   align-content: center;
-
+}
 /*--------------------------------------------------------------
   # DUNG CHUNG
   ----------------  ----------------------------------------------*/
@@ -419,16 +419,17 @@ a.tv-mon-it:hover {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
+  text-align: justify;
 }
 .cong-thuc-long {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 10; /* number of lines to show */
+  -webkit-line-clamp: 20; /* number of lines to show */
   -webkit-box-orient: vertical;
+  text-align: justify;
 }
 .noi-dung-cong-thuc {
-  background-color: #9c9c9c;
 }
 
 a.item {
@@ -439,4 +440,26 @@ a.item {
 a.item:hover {
   color: #7cc576;
   text-decoration: none !important;
+}
+.show {
+  background-color: rgba(209, 196, 196, 0.74);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+.show-ten {
+  text-align: center;
+  margin-top: 30px;
+}
+.show-img {
+  background-color: white;
+  margin-top: 40px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.show-congthuc {
+  background-color: white;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }

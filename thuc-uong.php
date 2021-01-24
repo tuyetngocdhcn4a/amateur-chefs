@@ -15,7 +15,8 @@ echo '</style>';
 <!-- BANNER -->
 <section class="thuc-uong-page mb-5">
     <div id="thuc-uong">
-        <h1 class="slogan-thuc-uong">Cho một cuộc sống tươi khỏe và lành mạnh</h1>
+        <h1 class="slogan-thuc-uong">
+            For a healthy and healthy life</h1>
     </div>
 </section>
 
@@ -71,12 +72,9 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <div class="col-4 pl-3">
-            <div class="side-bar pl-3">
-                <p>Bài viết mới nhất</p>
-                <p>Bài viết đã xem</p>
-            </div>
-        </div>
+        <?php
+        include './sidebar.php';
+        ?>
     </div>
 
 </section>>

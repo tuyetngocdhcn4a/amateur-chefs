@@ -30,20 +30,26 @@ echo '</style>';
             ?>
 
             <!-- ITEM -->
-            <a class="item py-2">
-                <div class="row">
-                    <span class="text-uppercase font-weight-bold row"><?php echo $row['tenmon']; ?></span>
+            <div class="show">
+                <a class="item py-2 d-flex">
+                    <div class="col-5">
+                        <div class="show-ten"><span
+                                class="text-uppercase font-weight-bold row"><?php echo $row['tenmon']; ?></span>
+                        </div>
+                        <div class="show-img"> <img class="contain col-12"
+                                <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
+                        </div>
 
-                    <img class="contain col-3" width="250px"
-                        <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
 
-                </div>
+                    </div>
 
-                <div class="col-8">
-                    <div class="noi-dung-cong-thuc">
-                        <?php echo $row['congthuc']; ?></div>
-                </div>
-            </a>
+                    <div class="col-7 show-congthuc">
+                        <div class="noi-dung-cong-thuc cong-thuc-long">
+                            <?php echo $row['congthuc']; ?></div>
+                    </div>
+                </a>
+            </div>
+
 
             <?php
                 }
@@ -57,12 +63,9 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <div class="col-4 pl-3">
-            <div class="side-bar pl-3">
-                <p>Bài viết mới nhất</p>
-                <p>Bài viết đã xem</p>
-            </div>
-        </div>
+        <?php
+        include './sidebar.php';
+        ?>
     </div>
 
 </section>>
