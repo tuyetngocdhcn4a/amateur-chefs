@@ -13,7 +13,7 @@ echo '</style>';
 
 
 <!-- BANNER -->
-<section class="mon-au-page mb-5">
+<section class="mon-trung-page mb-5">
     <div id="mon-au">
         <marquee class="slogan-meo-vat text-uppercase  ">
             Talent creates luxury

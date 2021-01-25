@@ -43,11 +43,31 @@ echo '</style>';
 
         </div>
         <div class="row d-flex in-show-btn">
-            <div class="search-container">
-                <form action="">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit-search"><i class="fa fa-search"></i></button>
-                </form>
+            <div class=" col-2">
+                <a href="#monau" class="btn btn-outline-light my-2 my-sm-0" role="button" aria-pressed="true">Ẩm thực
+                    Châu Âu
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#mona" class="btn btn-outline-light my-2 my-sm-0" role="button" aria-pressed="true">Ẩm thực
+                    Châu
+                    Á
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#monviet" class="btn btn-outline-light my-2 my-sm-0" role="button" aria-pressed="true">Ẩm thực
+                    Việt
+                    Nam
+                </a>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <nav class="">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                    </form>
+                </nav>
             </div>
         </div>
     </div>
@@ -57,8 +77,10 @@ echo '</style>';
 
 <!-- LIST MON -->
 
-<section class="container d-flex">
+<section id="monviet" class="container d-flex">
+
     <div class="row">
+
         <!-- CONTENT -->
         <div class="content col-9">
             <div class="thuan-viet d-flex row">
@@ -158,7 +180,7 @@ echo '</style>';
 
 </section>
 <!-- MON AU -->
-<section class="tv-mon d-flex row">
+<section id="monau" class="tv-mon d-flex row">
     <div class="title-item">
         <h1><a href="mon-au.php" class="tv-mon-it">ẨM THỰC CHÂU ÂU</a></h1>
     </div>
@@ -188,7 +210,7 @@ echo '</style>';
     </div>
 </section>
 
-<section class="tv-mon d-flex row">
+<section id="mona" class="tv-mon d-flex row">
     <div class="title-item">
         <h1><a href="mon-au.php" class="tv-mon-it">ẨM THỰC CHÂU Á</a></h1>
     </div>
@@ -224,13 +246,13 @@ echo '</style>';
     </div>
     <div class="col-sm-6 d-flex flex-column justify-content-around pl-5">
         <h1>VỀ CHÚNG TÔI</h1>
-        <p class="pr-5 w-100">Bạn đã bao giờ nghĩ mình sẽ sống trong một không gian nghệ thuật? ngôi nhà hay căn phòng
-            của bạn là một gian phòng triển lãm, là một gallery thu nhỏ và chính đồ vật trong nhà bạn là những tác phẩm
-            nghệ thuật ?</p>
-        <p class="pr-5 w-100"><b>Amasteur Chef </b>chúng tôi chuyên sản xuất gia công đồ gỗ nội thất, đóng đồ gỗ nội
-            thất cho căn hộ chung cư, nhà phố, văn phòng ở Toàn quốc. Kinh nghiệm thi công nhiều công trình nội thất,
-            chúng tôi tin rằng sẽ mang đến sản phẩm dịch
-            vụ tốt nhất đến với khách hàng và đối tác!</p>
+        <p class="pr-5 w-100">Học nấu ăn ở đâu hay tìm kiếm địa chỉ dạy nấu ăn chuyên nghiệp, chất lượng, đảm bảo 100%
+            học viên sau khi tốt nghiệp đều nắm vững kỹ năng ​nấu ăn ngon đang khiến nhiều bạn có định hướng học nghề
+            đầu bếp băn khoăn trong việc lựa chọn.</p>
+        <p class="pr-5 w-100"><b>Amasteur Chef </b>hiện là đơn vị đào tạo và cung ứng
+            nguồn nhân lực chất lượng cao cho ngành Du lịch, Dịch vụ, Ẩm thực, Nhà hàng – Khách sạn. Với những khóa học
+            đa dạng với tiêu chí “thực học – thực làm”, hơn 90% thời lượng thực hành và cung cấp các kiến thức từ cơ bản
+            nhất đến nâng cao, chuyên sâu được đánh giá là địa điểm học lý tưởng dành cho bạn.</p>
         <div>
             <h4>ĐỘI NGŨ QUẢN TRỊ:</h4>
             <p>1. Lê Hiền Hiền</p>

@@ -218,6 +218,42 @@ footer {
 }
 
 /*--------------------------------------------------------------
+  # MON bac
+  ----------------  ----------------------------------------------*/
+.mon-bac-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-a2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+/*--------------------------------------------------------------
+  # MON nam
+  ----------------  ----------------------------------------------*/
+.mon-nam-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-a2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+/*--------------------------------------------------------------
+  # MON trung
+  ----------------  ----------------------------------------------*/
+.mon-trung-page {
+  margin: 20px;
+  padding: 0;
+  background-image: url("img/bn-mon-a2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-size: cover;
+}
+/*--------------------------------------------------------------
   # MON AU
   ----------------  ----------------------------------------------*/
 .mon-au-page {
@@ -557,6 +593,7 @@ img {
 }
 .in-show-btn {
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 /* about */
@@ -569,4 +606,8 @@ img {
   background-image: url("img/ab1.jpg");
   padding: 20px;
   border-radius: 5px;
+}
+.title {
+  text-align: center;
+  background-color: rgb(114, 103, 7);
 }
