@@ -475,7 +475,7 @@ a.item:hover {
 
 .set-col {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   padding: 5px;
   justify-content: center;
@@ -514,7 +514,7 @@ img {
 }
 
 .index-page {
-  margin: 20px;
+  height: 400px;
   padding: 0;
   background-image: url("img/bn-tip.jpg");
   background-repeat: no-repeat;
@@ -523,10 +523,8 @@ img {
   background-size: cover;
 }
 
-#index {
-  height: 400px;
+#trang-chu {
   border: none;
-
   -webkit-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -8px 4px 20px -9px rgba(0, 0, 0, 0.75);
@@ -541,8 +539,6 @@ img {
 }
 .in-pr {
   background-color: transparent;
-  margin: 20px;
-  padding: 10px;
   border-radius: 20px;
 }
 .in-tt {
@@ -558,4 +554,19 @@ img {
   text-align: end;
   padding-top: 30px;
   border-radius: 20px;
+}
+.in-show-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* about */
+#about {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.ab {
+  background-image: url("img/ab1.jpg");
+  padding: 20px;
+  border-radius: 5px;
 }

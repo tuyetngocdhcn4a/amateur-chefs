@@ -61,6 +61,18 @@ class Model
         }
         return $table;
     }
+    public function select_category_with_paging_tt_monau($category, $step)
+    {
+        $table = null;
+        $paging = $step * 4;
+        $query = "SELECT * FROM congthuc where maloaimon = '$category' LIMIT $paging";
+        if ($sql = $this->conn->query($query)) {
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $table[] = $row;
+            }
+        }
+        return $table;
+    }
 
     public function show_detail($mamon)
     {
