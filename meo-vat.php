@@ -71,12 +71,10 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <div class="col-4 pl-3">
-            <div class="side-bar pl-3">
-                <p>Bài viết mới nhất</p>
-                <p>Bài viết đã xem</p>
-            </div>
-        </div>
+        <!-- SIDE BAR -->
+        <?php
+        include './sidebar.php';
+        ?>
     </div>
 
 </section>

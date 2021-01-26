@@ -13,10 +13,11 @@ echo '</style>';
 
 
 <!-- BANNER -->
-<section class="mon-au-page mb-5">
-    <div id="mon-au">
+<section class="mon-a-page mb-5">
+    <div id="mon-a">
         <marquee class="slogan-meo-vat text-uppercase  ">
-            Talent creates luxury
+
+            Cook for yourself, for people and for life more fun!
         </marquee>
     </div>
 </section>
@@ -44,7 +45,7 @@ echo '</style>';
             ?>
 
             <!-- ITEM -->
-            <a class="item py-2 row" href="showdata.php">
+            <a class="item py-2 row" href=<?php echo 'showdata.php?mamon=' . $row['mamon'] . '' ?>>
                 <img class="contain col-3" width="250px"
                     <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
                 <div class="col-8">
@@ -73,12 +74,9 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <div class="col-4 pl-3">
-            <div class="side-bar pl-3">
-                <p>Bài viết mới nhất</p>
-                <p>Bài viết đã xem</p>
-            </div>
-        </div>
+        <?php
+        include './sidebar.php';
+        ?>
     </div>
 
 </section>>

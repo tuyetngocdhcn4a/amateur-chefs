@@ -21,39 +21,41 @@ echo '</style>';
 
             include 'model/model.php';
             $model = new Model();
-            $step = 1;
+            $mamon = $_GET['mamon'];
+            $table = $model->show_detail($mamon);
 
-            $table = $model->select_category_with_paging1('NUOC001', $step);
-
-            if (array_key_exists('view-more', $_POST)) {
-                $table = $model->select_category_with_paging1('NUOC001', $step + 1);
-            }
 
             if (!empty($table)) {
                 foreach ($table as $row) {
             ?>
 
             <!-- ITEM -->
-            <a class="item py-2">
-                <div class="row">
-                    <span class="text-uppercase font-weight-bold row"><?php echo $row['tenmon']; ?></span>
+            <div class="show">
+                <a class="item py-2 d-flex">
+                    <div class="col-5">
+                        <div class="show-ten"><span
+                                class="text-uppercase font-weight-bold row"><?php echo $row['tenmon']; ?></span>
+                        </div>
+                        <div class="show-img"> <img class="contain col-12"
+                                <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
+                        </div>
 
-                    <img class="contain col-3" width="250px"
-                        <?php echo 'src="data:image/jpeg;base64,' . base64_encode($row['hinhanh']) . '"'; ?> />
 
-                </div>
+                    </div>
 
-                <div class="col-8">
-                    <div class="noi-dung-cong-thuc">
-                        <?php echo $row['congthuc']; ?></div>
-                </div>
-            </a>
+                    <div class="col-7 show-congthuc">
+                        <div class="noi-dung-cong-thuc cong-thuc-long">
+                            <?php echo $row['congthuc']; ?></div>
+                    </div>
+                </a>
+            </div>
+
 
             <?php
                 }
             } else {
                 echo '<div class="flex justify-center text-center py-5">
-                <span class="ten-mon text-uppercase font-weight-bold">TẠM THỜI CHƯA CÓ BÀI VIẾT</span>
+                <span class="ten-mon text-uppercase font-weight-bold">KẾT NỐI LỖI VUI LÒNG THỬ LẠI</span>
         </div>';
             }
             ?>
@@ -61,12 +63,9 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <div class="col-4 pl-3">
-            <div class="side-bar pl-3">
-                <p>Bài viết mới nhất</p>
-                <p>Bài viết đã xem</p>
-            </div>
-        </div>
+        <?php
+        include './sidebar.php';
+        ?>
     </div>
 
 </section>>
