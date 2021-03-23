@@ -74,6 +74,19 @@ class Model
         return $table;
     }
 
+    public function select_ALL($step)
+    {
+        $table = null;
+        $paging = $step * 4;
+        $query = "SELECT * FROM congthuc where mamon='au-bll' or mamon='a_gcuon' or mamon= 'vat_kb' or mamon= 'STMXoai'";
+        if ($sql = $this->conn->query($query)) {
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $table[] = $row;
+            }
+        }
+        return $table;
+    }
+
     public function show_detail($mamon)
     {
         $table = null;

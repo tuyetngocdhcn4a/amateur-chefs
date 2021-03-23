@@ -125,9 +125,9 @@ echo '</style>';
         </div>
 
         <!-- SIDE BAR -->
-        <?php
-        include './sidebar.php';
-        ?>
+
+
+
     </div>
 
 </section>

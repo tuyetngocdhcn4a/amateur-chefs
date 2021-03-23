@@ -172,10 +172,7 @@ echo '</style>';
             </div>
         </div>
 
-        <!-- SIDE BAR -->
-        <?php
-        include './sidebar.php';
-        ?>
+
     </div>
 
 </section>
